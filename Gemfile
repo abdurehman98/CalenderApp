@@ -24,6 +24,9 @@ gem 'devise'
 gem 'bootstrap', '5.0.0'
 gem "simple_calendar"
 gem 'pg'
+gem 'letter_opener'
+gem "sidekiq"
+
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
