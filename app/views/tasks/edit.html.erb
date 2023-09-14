@@ -1,0 +1,11 @@
+<%= turbo_frame_tag "modal" do%>
+  <div data-controller="modal" data-action="turbo:submit-end->modal#createtask">
+    <div id="my-modal">
+      <h1>Editing task</h1>
+
+      <%= render "form", task: @task %>
+
+      <br>
+    </div>
+  </div>
+<% end %>

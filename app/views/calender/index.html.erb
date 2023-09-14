@@ -1,0 +1,14 @@
+<div class="container mt-5 text-center">
+  <h1>Calendar</h1>
+
+  <%= month_calendar(events: @meetings) do |date, meetings| %>
+    <%= date.day %>
+    <br>
+    <% meetings.each do |meeting| %>
+      <%= render partial: "task_card", locals: { task: meeting } %>
+    <% end %>
+  <% end %>
+
+
+  <a href=tasks/new class="btn btn-primary btn-lg active" role="button" aria-pressed="true" data-turbo-frame="modal" data-action="click->modals#open">New Task
+

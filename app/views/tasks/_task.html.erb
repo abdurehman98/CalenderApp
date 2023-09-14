@@ -1,0 +1,32 @@
+<div id="<%= dom_id task %>">
+  <p>
+    <strong>Taskname:</strong>
+    <%= task.taskname %>
+  </p>
+
+  <p>
+    <strong>Taskdetails:</strong>
+    <%= task.taskdetails %>
+  </p>
+
+  <p>
+    <strong>Taskday:</strong>
+    <%= task.taskday %>
+  </p>
+
+  <%if task.invite.present?%>
+    <p>
+    <strong>Invitee:</strong>
+    <%= task.invite.email %>
+    </p>
+  <%else%>
+    <p>
+    </p>
+  <%end%>
+
+  <p>
+    <strong>User:</strong>
+    <%= task.user.name %>
+  </p>
+
+</div>
